@@ -3,8 +3,23 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --green: #19453F;
+    --green-dark: #0E352F;
+    --olive: #5E6D55;
+    --swamp: #E8EDEC;
+    --coral: #CA6C46;
+    --coral-dark: #C25F37;
+    --pearl: #F7FAF7;
+    --laurel: #E4EBE4;
+
+    --shadow-signin-button: 0 0 15px 0 rgba(0,0,0,0.1);
+    --shadow-outline-button: 0 0 15px 0 rgba(0,0,0,0.1)
+  }
   * {
-    @apply border-border;
+    @apply box-border;
   }
   body {
     @apply font-mulish text-base font-normal text-black bg-pearl;

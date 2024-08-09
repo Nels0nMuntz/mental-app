@@ -6,6 +6,7 @@ import eslintPluginReactRefresh from "eslint-plugin-react-refresh";
 import eslintPluginPrettier from "eslint-plugin-prettier";
 import eslintConfigPrettier from "eslint-config-prettier";
 import tslint from "typescript-eslint";
+import eslintPluginImport from "eslint-plugin-import";
 
 // For JS
 /** @type {import('eslint').Linter.FlatConfig} */
@@ -58,6 +59,7 @@ export default tslint.config(
       "react-hooks": eslintPluginReactHooks,
       "react-refresh": eslintPluginReactRefresh,
       prettier: eslintPluginPrettier,
+      "eslint-import": eslintPluginImport
     },
   },
   {
@@ -75,7 +77,7 @@ export default tslint.config(
       parserOptions: {
         parser: tslint.parser,
         project: ["./tsconfig.json"],
-        tsconfigRootDir: '.'
+        tsconfigRootDir: ".",
       },
     },
   },
@@ -91,6 +93,17 @@ export default tslint.config(
         "error",
         {
           endOfLine: "auto",
+        },
+      ],
+      "import/order": [
+        "error",
+        {
+          groups: ["builtin", "external", "internal"],
+          "newlines-between": "always",
+          alphabetize: {
+            order: "asc",
+            caseInsensitive: true,
+          },
         },
       ],
     },

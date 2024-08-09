@@ -7,12 +7,20 @@ export default {
         mulish: ["var(--font-mulish)"],
       },
       colors: {
-        black: "#000000",
-        green: "#19453F",
-        olive: "#5E6D55",
-        coral: "#CA6C46",
-        pearl: "#F7FAF7",
-        laurel: "#E4EBE4",
+        "black": "var(--black)",
+        "white": "var(--white)",
+        "green": "var(--green)",
+        "green-dark": "var(--green-dark)",
+        "olive": "var(--olive)",
+        "swamp": "var(--swamp)",
+        "coral": "var(--coral)",
+        "coral-dark": "var(--coral-dark)",
+        "pearl": "var(--pearl)",
+        "laurel": "var(--laurel)",
+      },
+      boxShadow: {
+        "signin-button": "var(--shadow-signin-button)",
+        "outline-button": "var(--shadow-outline-button)",
       },
       container: {
         center: true,
@@ -20,6 +28,15 @@ export default {
         screens: {
           "2xl": "1200px",
         },
+      },
+      screens: {
+        'xs': '375px',
+        'sm': '640px',
+        'md': '768px',
+        'lg': '992px',
+        'xl': '1024px',
+        '2xl': '1280px',
+        '3xl': '1600px',
       },
       keyframes: {
         "accordion-down": {

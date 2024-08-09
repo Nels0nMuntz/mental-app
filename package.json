@@ -10,6 +10,8 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.1",
+    "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "globals": "^15.8.0",
@@ -28,6 +30,7 @@
     "autoprefixer": "^10.4.20",
     "eslint": "^9.8.0",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
