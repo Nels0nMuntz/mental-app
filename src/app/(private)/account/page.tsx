@@ -1,6 +1,9 @@
 import React from "react";
-import { SignIn } from "@/views/index";
 
 export default function Page() {
-  return <SignIn />;
+  return (
+    <>
+      <h1>Account page</h1>
+    </>
+  );
 }
